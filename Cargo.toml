@@ -1,0 +1,9 @@
+[package]
+name = "magiccap-updater"
+version = "1.0.0"
+authors = ["Jake Gealer <jake@gealer.email>"]
+edition = "2018"
+
+[dependencies]
+sysinfo = "0.6.2"
+reqwest = "0.9.5"
