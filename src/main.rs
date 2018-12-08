@@ -113,9 +113,8 @@ fn main() {
 
                 print!("Starting MagicCap...");
                 io::stdout().flush().unwrap();
-                std::process::Command::new("xdg-open")
-                    .args(&[*&magiccap_executable_path.to_str().unwrap()])
-                    .output()
+                std::process::Command::new(*&magiccap_executable_path.to_str().unwrap())
+                    .spawn()
                     .unwrap();
                 print!(" done!\n");
             } else {
